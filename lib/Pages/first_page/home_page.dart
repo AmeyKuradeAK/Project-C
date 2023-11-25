@@ -32,14 +32,36 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [Icon(Icons.notifications)],
-        leading: Icon(Icons.menu),
+        backgroundColor: Colors.deepPurple,
+        actions: [Icon(Icons.login)],
         title: Center(
           child: Text("S.T.E.C"),
         ),
       ),
-      body: _pages[_selectedIndex],
+      drawer: Drawer(
+        child: Container(
+          color: Colors.deepPurple[200],
+          child: ListView(children: [
+            DrawerHeader(
+                child: Center(
+                  child: Text(
+                              "S T E C",
+                              style: TextStyle(fontSize: 35),
+                            ),
+                )),
+            ListTile(
+              title: Text("Home"),
+              leading: Icon(Icons.home),
+            )
+          ]),
+        ),
+        
+      ),
+      body: 
+      _pages[_selectedIndex],
+      backgroundColor: Colors.deepPurple,
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.deepPurple[300],
         onTap: _navigateBottomBar,
         currentIndex: _selectedIndex,
         type: BottomNavigationBarType.fixed,
