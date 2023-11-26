@@ -44,21 +44,30 @@ class _HomePageState extends State<HomePage> {
           child: ListView(children: [
             DrawerHeader(
                 child: Center(
-                  child: Text(
-                              "S T E C",
-                              style: TextStyle(fontSize: 35),
-                            ),
-                )),
+                    child: Text(
+              "S T E C",
+              style: TextStyle(fontSize: 35),
+            ))),
             ListTile(
-              title: Text("Home"),
-              leading: Icon(Icons.home),
+              title: Text("WhatsApp"),
+              leading: Icon(Icons.group),
+            ),
+            ListTile(
+              title: Text("Facebook"),
+              leading: Icon(Icons.facebook),
+            ),
+            ListTile(
+              title: Text("Instagram"),
+              leading: Icon(Icons.mark_chat_unread_sharp),
+            ),
+            ListTile(
+              title: Text("Telegram"),
+              leading: Icon(Icons.telegram),
             )
           ]),
         ),
-        
       ),
-      body: 
-      _pages[_selectedIndex],
+      body: _pages[_selectedIndex],
       backgroundColor: Colors.deepPurple,
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.deepPurple[300],
