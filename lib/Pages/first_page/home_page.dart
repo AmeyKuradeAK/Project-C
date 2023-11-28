@@ -63,7 +63,11 @@ class _HomePageState extends State<HomePage> {
             ListTile(
               title: Text("Telegram"),
               leading: Icon(Icons.telegram),
-            )
+            ),
+            ListTile(
+              title: Text("Community Discussion")
+              leading: Icon(Icons.community)
+              )
           ]),
         ),
       ),
