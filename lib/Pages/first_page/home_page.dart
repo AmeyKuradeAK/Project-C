@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_import
 
 import 'package:flutter/material.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:project_c/Pages/first_page/components/main_list.dart';
 import 'package:project_c/Pages/home_page/homepage.dart';
 import 'package:project_c/Pages/message_page/messagepage.dart';
@@ -72,25 +73,32 @@ class _HomePageState extends State<HomePage> {
       ),
       body: _pages[_selectedIndex],
       backgroundColor: Colors.deepPurple,
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.deepPurple[300],
-        onTap: _navigateBottomBar,
-        currentIndex: _selectedIndex,
-        type: BottomNavigationBarType.fixed,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.message),
-            label: 'Message',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Person',
-          )
-        ],
+      bottomNavigationBar: Container(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 9),
+          child: GNav(
+              backgroundColor: Colors.deepPurple,
+              color: Colors.white,
+              activeColor: Colors.white,
+              tabBackgroundColor: Colors.deepPurple.shade800,
+              gap: 8,
+              onTabChange: _navigateBottomBar,
+              padding: EdgeInsets.all(16),
+              tabs: [
+                GButton(
+                  icon: Icons.home,
+                  text: 'Home',
+                ),
+                GButton(
+                  icon: Icons.message,
+                  text: 'Message',
+                ),
+                GButton(
+                  icon: Icons.person,
+                  text: 'Profile',
+                )
+              ]),
+        ),
       ),
     );
   }
