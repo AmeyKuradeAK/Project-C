@@ -57,7 +57,14 @@ class _HomePageState extends State<HomePage> {
                   'https://chat.whatsapp.com/K10ZWYFuuDt9FEyAhOy8PB')),
               child: ListTile(
                 title: Text("WhatsApp"),
-                leading: Icon(Icons.group),
+                leading: Padding(
+                  padding: const EdgeInsets.only(left: 5),
+                  child: Image.asset(
+                    'assets/icon/whatsapp.png',
+                    height: 20,
+                    width: 20,
+                  ),
+                ),
               ),
             ),
             InkWell(
@@ -70,11 +77,17 @@ class _HomePageState extends State<HomePage> {
             ),
             InkWell(
               child: ListTile(
-                onTap: () => launchUrl(
-                    Uri.parse('https://www.instagram.com/__s_a_g_e/')),
-                title: Text("Instagram"),
-                leading: Icon(Icons.mark_chat_unread_sharp),
-              ),
+                  onTap: () => launchUrl(
+                      Uri.parse('https://www.instagram.com/__s_a_g_e/')),
+                  title: Text("Instagram"),
+                  leading: Padding(
+                    padding: const EdgeInsets.only(left: 1.5),
+                    child: Image.asset(
+                      'assets/icon/instagram.png',
+                      height: 20,
+                      width: 20,
+                    ),
+                  )),
             ),
             InkWell(
               child: ListTile(
@@ -86,9 +99,14 @@ class _HomePageState extends State<HomePage> {
             InkWell(
               onTap: () => launchUrl(Uri.parse('https://www.google.co.in/')),
               child: ListTile(
-                  title: Text("Community Discussion"),
-                  leading: Icon(Icons.group)),
-            ),
+                title: Text("Community Discussion"),
+                leading: Image.asset(
+                  'assets/icon/community.png',
+                  height: 25,
+                  width: 25,
+                ),
+              ),
+            )
           ]),
         ),
       ),
