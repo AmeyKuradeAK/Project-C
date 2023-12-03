@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:project_c/Pages/first_page/components/main_list.dart';
+import 'package:project_c/Pages/home_page/Intro_to_flutter/flutter_intro.dart';
 
 class mainHomePage extends StatelessWidget {
   mainHomePage({super.key});
@@ -24,7 +25,7 @@ class mainHomePage extends StatelessWidget {
         Padding(
           padding: EdgeInsets.all(8.0),
           child: Container(
-            
+
               //Giving the Curve the Posts
               height: 300,
               color: Colors.blue,
@@ -42,6 +43,16 @@ class mainHomePage extends StatelessWidget {
                     child: Text(
                       "Introduction to Flutter",
                       style: TextStyle(fontSize: 20),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: ((context) => FlutterIntro())));
+                      },
+                      child: Text("Click"),
                     ),
                   )
                 ],
@@ -69,6 +80,16 @@ class mainHomePage extends StatelessWidget {
                       "Introduction to Python",
                       style: TextStyle(fontSize: 20),
                     ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: ((context) => FlutterIntro())));
+                      },
+                      child: Text("Click"),
+                    ),
                   )
                 ],
               )),
@@ -95,6 +116,16 @@ class mainHomePage extends StatelessWidget {
                       "Introduction to rust",
                       style: TextStyle(fontSize: 20),
                     ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: ((context) => FlutterIntro())));
+                      },
+                      child: Text("Click"),
+                    ),
                   )
                 ],
               )),
@@ -120,6 +151,16 @@ class mainHomePage extends StatelessWidget {
                       "Introduction to Ruby",
                       style: TextStyle(fontSize: 20),
                     ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: ((context) => FlutterIntro())));
+                      },
+                      child: Text("Click"),
+                    ),
                   )
                 ],
               )),
@@ -144,6 +185,16 @@ class mainHomePage extends StatelessWidget {
                     child: Text(
                       "Introduction to java",
                       style: TextStyle(fontSize: 20),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: ((context) => FlutterIntro())));
+                      },
+                      child: Text("Click"),
                     ),
                   )
                 ],
