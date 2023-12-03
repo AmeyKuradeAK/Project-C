@@ -19,16 +19,17 @@ class mainHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      scrollDirection: Axis.vertical,
       children: [
         //1st Post
         Padding(
           padding: EdgeInsets.all(8.0),
           child: Container(
+            
               //Giving the Curve the Posts
               height: 300,
               color: Colors.blue,
               child: ListView(
+                primary: false,
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -54,6 +55,7 @@ class mainHomePage extends StatelessWidget {
               height: 300,
               color: Colors.blue,
               child: ListView(
+                primary: false,
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -79,6 +81,7 @@ class mainHomePage extends StatelessWidget {
               height: 300,
               color: Colors.blue,
               child: ListView(
+                primary: false,
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -103,6 +106,7 @@ class mainHomePage extends StatelessWidget {
               height: 300,
               color: Colors.blue,
               child: ListView(
+                primary: false,
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -127,6 +131,7 @@ class mainHomePage extends StatelessWidget {
               height: 300,
               color: Colors.blue,
               child: ListView(
+                primary: false,
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
