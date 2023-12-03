@@ -6,6 +6,9 @@ import 'package:project_c/Pages/first_page/components/main_list.dart';
 import 'package:project_c/Pages/home_page/homepage.dart';
 import 'package:project_c/Pages/message_page/messagepage.dart';
 import 'package:project_c/Pages/profile/profile.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+final Uri _url = Uri.parse('https://flutter.dev');
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -49,25 +52,43 @@ class _HomePageState extends State<HomePage> {
               "S T E C",
               style: TextStyle(fontSize: 35),
             ))),
-            ListTile(
-              title: Text("WhatsApp"),
-              leading: Icon(Icons.group),
+            InkWell(
+              onTap: () => launchUrl(Uri.parse(
+                  'https://chat.whatsapp.com/K10ZWYFuuDt9FEyAhOy8PB')),
+              child: ListTile(
+                title: Text("WhatsApp"),
+                leading: Icon(Icons.group),
+              ),
             ),
-            ListTile(
-              title: Text("Facebook"),
-              leading: Icon(Icons.facebook),
+            InkWell(
+              child: ListTile(
+                onTap: () => launchUrl(Uri.parse(
+                    'https://www.facebook.com/profile.php?id=61554370644501')),
+                title: Text("Facebook"),
+                leading: Icon(Icons.facebook),
+              ),
             ),
-            ListTile(
-              title: Text("Instagram"),
-              leading: Icon(Icons.mark_chat_unread_sharp),
+            InkWell(
+              child: ListTile(
+                onTap: () => launchUrl(
+                    Uri.parse('https://www.instagram.com/__s_a_g_e/')),
+                title: Text("Instagram"),
+                leading: Icon(Icons.mark_chat_unread_sharp),
+              ),
             ),
-            ListTile(
-              title: Text("Telegram"),
-              leading: Icon(Icons.telegram),
+            InkWell(
+              child: ListTile(
+                onTap: () => launchUrl(Uri.parse('https://www.google.co.in/')),
+                title: Text("Telegram"),
+                leading: Icon(Icons.telegram),
+              ),
             ),
-            ListTile(
-                title: Text("Community Discussion"),
-                leading: Icon(Icons.group)),
+            InkWell(
+              onTap: () => launchUrl(Uri.parse('https://www.google.co.in/')),
+              child: ListTile(
+                  title: Text("Community Discussion"),
+                  leading: Icon(Icons.group)),
+            ),
           ]),
         ),
       ),
