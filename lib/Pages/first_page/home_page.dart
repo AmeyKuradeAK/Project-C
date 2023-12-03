@@ -8,8 +8,6 @@ import 'package:project_c/Pages/message_page/messagepage.dart';
 import 'package:project_c/Pages/profile/profile.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-final Uri _url = Uri.parse('https://flutter.dev');
-
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
