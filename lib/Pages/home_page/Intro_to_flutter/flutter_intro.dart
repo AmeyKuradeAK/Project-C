@@ -50,7 +50,34 @@ class FlutterIntro extends StatelessWidget {
                 "I’ve been hearing about how amazing Flutter is and I’ve decided to try it out to learn something new. I wished to have more topics to discuss with colleagues. \n",
                 style: TextStyle(fontSize: 16),
               ),
-            )
+            ),
+            Container(
+              child: Title(
+                  color: Colors.black,
+                  child: Center(
+                      child: Text(
+                    "About The Guide",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ))),
+            ),
+            Container(
+              child: Text(
+                "Most of the articles on this topic are well written and straightforward. The problem is that they require you to know some basic things, and those small things are not described in articles that are suppose to give you basic knowledge. \n",
+                style: TextStyle(fontSize: 16),
+              ),
+            ),
+            Container(
+              child: Text(
+                "In this series, I’ll try to avoid that problem. We’ll start from scratch and create applications sorting out every step we do. During this series, we will use all basic widgets, design a unique interface, interact with native modules, and build our app for both iOS and Android platforms. \n",
+                style: TextStyle(fontSize: 16),
+              ),
+            ),
+            Container(
+              child: Text(
+                "This series is written from the perspective of a web developer. Most of you are probably familiar with this stack. The analogy with a familiar platform is better than one where you have to build houses or use Animal, Dog, Foo, Bar, etc. \n \n  I’ll keep it short, to save your time. For the most curious of you, I’ll put useful links around the text. \n",
+                style: TextStyle(fontSize: 16),
+              ),
+            ),
           ],
         ));
   }
