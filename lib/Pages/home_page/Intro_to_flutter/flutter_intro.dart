@@ -12,10 +12,8 @@ class FlutterIntro extends StatelessWidget {
         ),
         body: ListView(
           children: [
-            Center(
-              child: Image.asset(
-                'assets/thumbnail/intro_to_flutter.png',
-              ),
+            Image.asset(
+              'assets/thumbnail/intro_to_flutter.png',
             ),
             Container(
               child: Title(

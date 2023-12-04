@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:project_c/Pages/first_page/components/main_list.dart';
 import 'package:project_c/Pages/home_page/Intro_to_flutter/flutter_intro.dart';
+import 'package:project_c/Pages/home_page/Intro_to_python/intropy.dart';
 
 class mainHomePage extends StatelessWidget {
   mainHomePage({super.key});
@@ -86,7 +87,7 @@ class mainHomePage extends StatelessWidget {
                     child: ElevatedButton(
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: ((context) => FlutterIntro())));
+                            builder: ((context) => IntroPython())));
                       },
                       child: Text("Click"),
                     ),
